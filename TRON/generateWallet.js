@@ -7,9 +7,9 @@ const TronWeb = require("tronweb");
 
 const HttpProvider = TronWeb.providers.HttpProvider; //This provider is optional, you can just use a url for the nodes instead
 
-const fullNode = new HttpProvider("https://api.shasta.trongrid.io"); //Full node http endpoint
-const solidityNode = new HttpProvider("https://api.shasta.trongrid.io"); // Solidity node http endpoint
-const eventServer = new HttpProvider("https://api.shasta.trongrid.io"); //solidity node http endpoint
+const fullNode = new HttpProvider("https://nile.trongrid.io"); //Full node http endpoint
+const solidityNode = new HttpProvider("https://nile.trongrid.io"); // Solidity node http endpoint
+const eventServer = new HttpProvider("https://nile.trongrid.io"); //solidity node http endpoint
 
 
 const tronWeb = new TronWeb(fullNode, solidityNode, eventServer);
