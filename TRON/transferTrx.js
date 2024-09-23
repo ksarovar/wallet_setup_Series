@@ -4,9 +4,8 @@ const HttpProvider = TronWeb.providers.HttpProvider; //This provider is optional
 const fullNode = new HttpProvider("https://nile.trongrid.io"); //Full node http endpoint
 const solidityNode = new HttpProvider("https://nile.trongrid.io"); // Solidity node http endpoint
 const eventServer = new HttpProvider("https://nile.trongrid.io"); //solidity node http endpoint
-const privatekey="65073c2a0a867c7855308ff1235fe6706b6419b151c92967f41807bb7fe0b7bf"
+const privatekey=""
 const tronWeb = new TronWeb(fullNode, solidityNode, eventServer,privatekey);
-// privatekey="412d07d9f59339d9fc1d33e3236a3330de1c1b3c1be3f62f87b252f0ea9e2284"
 const trxTransfer = async () => {
     try {
      const recieverAddress="TCCABp3tuctUUhtBrNPhvuffdNhYPPcZYF"
